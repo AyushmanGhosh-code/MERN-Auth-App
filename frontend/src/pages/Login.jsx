@@ -1,5 +1,5 @@
 import { useState,useEffect } from "react";
-import { useNavigate } from "react-router-dom"
+import { NavLink, useNavigate } from "react-router-dom"
 import { IoIosEye } from "react-icons/io";
 import { IoIosEyeOff } from "react-icons/io";
 import toast from "react-hot-toast";
@@ -95,6 +95,14 @@ export default function Login()
                         showPassword ? (<IoIosEye/>) : (<IoIosEyeOff/>)
                     }
                     </div>
+                </div>
+
+                <div className="mt-1">
+                  <NavLink to='/forgot'>
+                  <p className="text-[14px] text-blue-400 font-bold">
+                       Forgot Password?
+                  </p>
+                  </NavLink>
                 </div>
               </div>
 
