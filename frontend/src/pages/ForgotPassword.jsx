@@ -8,7 +8,7 @@ export default function ForgotPassword()
         email:''
     });
 
-    const API_URL = 'http://localhost:4000/api/v1';
+    const API_URL = 'https://mern-auth-app-arc0.onrender.com/api/v1';
     const navigate = useNavigate();
 
     async function forgot()

@@ -133,7 +133,7 @@ exports.forgotPassword = async(req,res) => {
             from:'DevHolic',
             to:email,
             subject:'Reset Password',
-            text:`Reset Your Password: http://localhost:5173/reset-password/${user._id}/${token}`,
+            text:`Reset Your Password: https://mern-auth-app-tau.vercel.app/reset-password/${user._id}/${token}`,
         })
 
         console.log(sendMail);
