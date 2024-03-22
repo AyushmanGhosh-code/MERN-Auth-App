@@ -4,9 +4,7 @@ require('dotenv').config();
 const cors = require('cors');
 
 app.use(express.json());
-app.use(cors({
-    'origin':'*'
-}))
+app.use(cors());
 
 const authRouter = require('./routes/user');
 app.use('/api/v1',authRouter);
